@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Category({ category }) {
   const { name, description, image } = category;
@@ -12,7 +12,9 @@ export default function Category({ category }) {
       <div className="category__text">
         <h2 className="category__name">{name}</h2>
         <p className="category_description">{description}</p>
-        <button className="btn">&#62; View menu</button>
+        <Link to={`/${name}`} className="btn">
+          &#62; View menu
+        </Link>
       </div>
     </li>
   );
