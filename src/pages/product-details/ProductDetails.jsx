@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import Ingredients from "../../components/ingredients/Ingredients";
 import productData from "../../data/productData.json";
 
 export default function ProductDetails() {
@@ -20,6 +21,7 @@ export default function ProductDetails() {
       <h1 className="details__name">{name}</h1>
       <p className="details__description">{description}</p>
       <h2>Ingredients</h2>
+      <Ingredients ingredients={ingredients} />
       <h2>Nutrition Facts</h2>
       <button onClick={() => history.goBack()}>Go back</button>
     </article>
