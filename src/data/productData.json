@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "slug": "easy-massaged-kale-salad",
     "name": "Easy Massaged Kale Salad",
     "category": "dishes",
     "abstract": "If you’ve ever wondered why some people suggest massaging kale before eating it, you’ve come to the right place.",
@@ -119,6 +120,7 @@
   },
   {
     "id": 2,
+    "slug": "smoky-shredded-marinated-jackfruit",
     "name": "Smoky Shredded Marinated Jackfruit",
     "category": "dishes",
     "abstract": "Mmm, smoky marinated jackfruit. If you haven’t delved into the world of jackfruit yet, you’re missing out!",
@@ -195,6 +197,7 @@
   },
   {
     "id": 3,
+    "slug": "pesto-broccoli-pasta-salad",
     "name": "Pesto Broccoli Pasta Salad",
     "category": "dishes",
     "abstract": "This is an amazing pesto broccoli salad with sun-dried tomatoes, a big gluten-free flavor.",
@@ -314,6 +317,7 @@
   },
   {
     "id": 4,
+    "slug": "smoky-bbq-bean-tacos",
     "name": "Smoky BBQ Bean Tacos",
     "category": "dishes",
     "abstract": "You know when you’re eating something so delicious you just can’t stop saying, “Mmmmmm, so good!” - that’s exactly what happened with these BBQ bean tacos",
@@ -434,6 +438,7 @@
 
   {
     "id": 5,
+    "slug": "almond-joy-stuffed-dates",
     "name": "Almond Joy Stuffed Dates",
     "category": "desserts",
     "abstract": "Yes, all of the classic flavors of Almond Joys — chocolate, coconut, almonds — stuffed into a caramelly medjool date",
@@ -550,6 +555,7 @@
   },
   {
     "id": 6,
+    "slug": "banana-ice-cream",
     "name": "Banana Ice Cream",
     "category": "desserts",
     "abstract": "It's creamy, fluffy, sweet, fruity, refreshing, and delicious!",
@@ -672,6 +678,7 @@
   },
   {
     "id": 7,
+    "slug": "chocolate-turtles",
     "name": "Chocolate Turtles",
     "category": "desserts",
     "abstract": "Healthier “candy” for the win, those Vegan Chocolate Turtles, all very cute and delicious!",
@@ -738,6 +745,7 @@
   },
   {
     "id": 8,
+    "slug": "thin-mints",
     "name": "Thin Mints",
     "category": "desserts",
     "abstract": "This is a delicious vegan and healthier version of the classic chocolatey Thin Mint cookies.",
@@ -856,6 +864,7 @@
   },
   {
     "id": 9,
+    "slug": "chocolate-cherry-almond-milk",
     "name": "Chocolate Cherry Almond Milk",
     "category": "drinks",
     "abstract": "Supa thick! Supa chocolaty! Supa cherry-y! Give it a try!",
@@ -921,6 +930,7 @@
   },
   {
     "id": 10,
+    "slug": "coconut-clementine-green-smoothie",
     "name": "Coconut Clementine Green Smoothie",
     "category": "drinks",
     "abstract": "A refreshing 5-ingredient green smoothie infused with clementines and coconut milk.",
@@ -994,6 +1004,7 @@
   },
   {
     "id": 11,
+    "slug": "cucumber-cooler-cocktails",
     "name": "Cucumber Cooler Cocktails",
     "category": "drinks",
     "abstract": "Come and enjoy this simply quality light and delicious cocktail",
@@ -1062,6 +1073,7 @@
   },
   {
     "id": 12,
+    "slug": "coconut-papaya-smoothie",
     "name": "Coconut Papaya Smoothie",
     "category": "drinks",
     "abstract": "Creamy papaya smoothie infused with lime, ginger, carrot, and coconut milk!",
