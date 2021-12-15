@@ -1,7 +1,9 @@
+import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import productData from "../../data/productData.json";
 
 export default function ProductDetails() {
+  const history = useHistory();
   const { category, slug } = useParams();
   const product = productData.find(
     (data) => data.category === category && data.slug === slug
@@ -19,7 +21,7 @@ export default function ProductDetails() {
       <p className="details__description">{description}</p>
       <h2>Ingredients</h2>
       <h2>Nutrition Facts</h2>
-      <button>Go back</button>
+      <button onClick={() => history.goBack()}>Go back</button>
     </article>
   );
 }
