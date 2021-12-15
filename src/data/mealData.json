@@ -1,0 +1,202 @@
+{
+  "dishes": {
+    "id": 1,
+    "name": "dishes",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "image": "../images/dishes/kale-salad.jpg",
+    "products": [
+      {
+        "id": 1,
+        "name": "Easy Massaged Kale Salad",
+        "abstract": "If you’ve ever wondered why some people suggest massaging kale before eating it, you’ve come to the right place.",
+        "description": "If you’ve ever wondered why some people suggest massaging kale before eating it, you’ve come to the right place. Because some kale varieties are more delicate than others, we're'using curly kale for massaging because it’s quite hearty, fibrous, and benefits from a good massage.",
+        "image": "../images/dishes/kale-salad.jpg",
+        "ingredients": [
+          "large bundles curly kale",
+          "onion",
+          "lemon juice",
+          "extra virgin olive oil",
+          "sea salt",
+          "tahini",
+          "maple syrup",
+          "crispy baked chickpeas",
+          "water"
+        ],
+        "calories": 183,
+        "nutrition": [
+          {
+            "id": 1,
+            "label": "Carbohydrates",
+            "amount": 10.8,
+            "unit": "g"
+          },
+          {
+            "id": 2,
+            "label": "Protein",
+            "amount": 6.9,
+            "unit": "g"
+          },
+          {
+            "id": 3,
+            "label": "Fat",
+            "amount": 14.4,
+            "unit": "g"
+          },
+          {
+            "id": 4,
+            "label": "Saturated Fat",
+            "amount": 2,
+            "unit": "g"
+          },
+          {
+            "id": 5,
+            "label": "Polyunsaturated Fat",
+            "amount": 5.16,
+            "unit": "g"
+          },
+          {
+            "id": 6,
+            "label": "Monounsaturated Fat",
+            "amount": 6.5,
+            "unit": "g"
+          },
+          {
+            "id": 7,
+            "label": "Trans Fat",
+            "amount": 0,
+            "unit": "g"
+          },
+          {
+            "id": 8,
+            "label": "Cholesterol",
+            "amount": 0,
+            "unit": "mg"
+          },
+          {
+            "id": 9,
+            "label": "Sodium",
+            "amount": 46,
+            "unit": "mg"
+          },
+          {
+            "id": 10,
+            "label": "Potassium",
+            "amount": 315,
+            "unit": "mg"
+          },
+          {
+            "id": 11,
+            "label": "Fiber",
+            "amount": 4.4,
+            "unit": "g"
+          },
+          {
+            "id": 12,
+            "label": "Sugar",
+            "amount": 4.4,
+            "unit": "g"
+          },
+          {
+            "id": 13,
+            "label": "Vitamin A",
+            "amount": 4013,
+            "unit": "IU"
+          },
+          {
+            "id": 14,
+            "label": "Vitamin C",
+            "amount": 53.89,
+            "unit": "mg"
+          },
+          {
+            "id": 15,
+            "label": "Calcium",
+            "amount": 81,
+            "unit": "mg"
+          },
+          {
+            "id": 16,
+            "label": "Iron",
+            "amount": 2.22,
+            "unit": "mg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smoky Shredded Marinated Jackfruit",
+        "abstract": "Mmm, smoky marinated jackfruit. If you haven’t delved into the world of jackfruit yet, you’re missing out!",
+        "description": "Mmm, smoky marinated jackfruit. If you haven’t delved into the world of jackfruit yet, you’re missing out! Smoky, 30-minute marinated jackfruit, perfect for with enchiladas, burritos, tacos, and more! Incredibly flavorful, and so versatile!",
+        "image": "../images/dishes/marinated-jackfruit.jpg",
+        "ingredients": [
+          "dried jackfruit",
+          "black pepper",
+          "avocado oil",
+          "onion",
+          "sea salt",
+          "garlic cloves",
+          "vegetable broth",
+          "unsweetened plain cashew milk",
+          "maple syrup",
+          "lime juice",
+          "coconut aminos",
+          "smoked paprika",
+          "Red cabbage",
+          "Fresh radish",
+          "Cilantro"
+        ],
+        "calories": 79,
+        "nutrition": [
+          {
+            "id": 1,
+            "label": "Carbohydrates",
+            "amount": 10,
+            "unit": "g"
+          },
+          {
+            "id": 2,
+            "label": "Protein",
+            "amount": 0.8,
+            "unit": "g"
+          },
+          {
+            "id": 3,
+            "label": "Fat",
+            "amount": 3.9,
+            "unit": "g"
+          },
+          {
+            "id": 4,
+            "label": "Saturated Fat",
+            "amount": 0.5,
+            "unit": "g"
+          },
+          {
+            "id": 5,
+            "label": "Sodium",
+            "amount": 610,
+            "unit": "mg"
+          },
+          {
+            "id": 6,
+            "label": "Potassium",
+            "amount": 124,
+            "unit": "mg"
+          },
+          {
+            "id": 7,
+            "label": "Fiber",
+            "amount": 4.1,
+            "unit": "g"
+          },
+          {
+            "id": 8,
+            "label": "Sugar",
+            "amount": 2.7,
+            "unit": "g"
+          }
+        ]
+      }
+    ]
+  }
+}
