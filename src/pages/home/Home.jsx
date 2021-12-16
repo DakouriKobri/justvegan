@@ -8,9 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1 style={{ backgroundColor: "aqua" }}>Hero</h1>
       <ul>{categoryList}</ul>
-      <h1 style={{ backgroundColor: "aqua" }}>Footer</h1>
     </div>
   );
 }
