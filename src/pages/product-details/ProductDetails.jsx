@@ -1,6 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Ingredients from "../../components/ingredients/Ingredients";
+import NutritionTable from "../../components/nutrition-table/NutritionTable";
 import productData from "../../data/productData.json";
 
 export default function ProductDetails() {
@@ -9,8 +10,7 @@ export default function ProductDetails() {
   const product = productData.find(
     (data) => data.category === category && data.slug === slug
   );
-  const { calories, description, image, ingredients, name, nutrition } =
-    product;
+  const { description, image, ingredients, name } = product;
   const imageSrc = require(`../../images/${category}/${image}`);
 
   return (
@@ -23,6 +23,7 @@ export default function ProductDetails() {
       <h2>Ingredients</h2>
       <Ingredients ingredients={ingredients} />
       <h2>Nutrition Facts</h2>
+      <NutritionTable product={product} />
       <button onClick={() => history.goBack()}>Go back</button>
     </article>
   );
