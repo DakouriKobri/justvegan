@@ -13,7 +13,6 @@ export default function Contact() {
   const openingTimes = openingHours.map((time) => (
     <OpeningTimes key={time.id} {...time} />
   ));
-  console.log(showModal);
   function getBooking(newBooking) {
     setBooking(newBooking);
     setShowModal(true);

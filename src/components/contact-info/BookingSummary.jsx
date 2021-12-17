@@ -38,10 +38,10 @@ export default function BookingSummary({ booking }) {
           <strong>WARNING!</strong>
         </p>
         <p>
-          Please, note that this website doesn't provide any kind of service. It
+          Please, note that this website doesn't provide any actual service. It
           was built only as an educational and self-promoting material. Feel
-          free to contact us at <strong>maurille.kobri@gmail.com</strong> if
-          your are interesting in a collaboration in website building.
+          free to contact us at <strong>maurille.kobri@gmail.com</strong> if you
+          are interesting in collaborating regarding building web applications.
         </p>
       </div>
     </article>
