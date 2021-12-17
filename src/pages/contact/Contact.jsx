@@ -5,6 +5,7 @@ import openingHours from "../../data/openingHours.json";
 import BookingForm from "../../components/contact-info/BookingForm";
 import Modal from "../../components/modal/Modal";
 import BookingSummary from "../../components/contact-info/BookingSummary";
+import Map from "../../components/contact-info/Map";
 
 export default function Contact() {
   const [showModal, setShowModal] = useState(false);
@@ -41,15 +42,8 @@ export default function Contact() {
         </Modal>
       )}
       <h2>Address</h2>
-      <p>
-        <span>City</span>
-        <span>Stockholm</span>
-      </p>
-      <p>
-        <span>Country</span>
-        <span>Sweden</span>
-      </p>
-      <h2 style={{ backgroundColor: "orangered" }}>Map</h2>
+      <p> Magnus Ladulåsgatan 8C, 118 66 Stockholm</p>
+      <Map />
     </section>
   );
 }
