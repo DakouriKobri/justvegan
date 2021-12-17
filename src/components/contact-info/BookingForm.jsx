@@ -1,15 +1,21 @@
 import { useState } from "react";
+import timeOptionData from "../../data/timeOptionData.json";
+import TimeOptions from "./TimeOptions";
 
 export default function BookingForm({ getBooking }) {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [numberOfPeople, setNumberOfPeople] = useState(2);
+  const [numberOfPeople, setNumberOfPeople] = useState();
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
 
+  const selectedOption = timeOptionData.map((data) => (
+    <TimeOptions key={data.label} data={data} />
+  ));
+
   function resetForm() {
     setFullName("");
-    setNumberOfPeople(2);
+    setNumberOfPeople();
     setEmail("");
     setDate("");
     setTime("");
@@ -49,7 +55,7 @@ export default function BookingForm({ getBooking }) {
         <span>Number of People:</span>
         <input
           type="number"
-          placeholder="2"
+          placeholder="9"
           min="1"
           max="150"
           onChange={(event) => setNumberOfPeople(event.target.value)}
@@ -70,13 +76,7 @@ export default function BookingForm({ getBooking }) {
         <span>Time: </span>
         <select onChange={(event) => setTime(event.target.value)} required>
           <option value="">Select Hour</option>
-          <option value="11:00"> 11:00</option>
-          <option value="12:00"> 12:00</option>
-          <option value="14:00"> 14:00</option>
-          <option value="16:00"> 16:00</option>
-          <option value="18:00"> 18:00</option>
-          <option value="20:00"> 20:00</option>
-          <option value="22:00"> 22:00</option>
+          {selectedOption}
         </select>
       </label>
       <button>Submit</button>
