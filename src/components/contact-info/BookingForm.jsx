@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function BookingForm() {
+export default function BookingForm({ getBooking }) {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [numberOfPeople, setNumberOfPeople] = useState(2);
@@ -19,7 +19,7 @@ export default function BookingForm() {
     event.preventDefault();
 
     const newBooking = { fullName, email, numberOfPeople, date, time };
-    console.log(newBooking);
+    getBooking(newBooking);
     resetForm();
   }
 
