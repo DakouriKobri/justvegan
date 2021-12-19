@@ -18,13 +18,19 @@ export default function CategoryPage() {
 
   return (
     <section className="products">
-      <div className="products__hero">
-        <img src={imageSrc} alt={category} className="products__hero__image" />
-        <h1 className="products__hero__name">{category}</h1>
+      <div className="container">
+        <div className="products__hero">
+          <img
+            src={imageSrc}
+            alt={category}
+            className="products__hero__image"
+          />
+          <h1 className="products__hero__name">{category}</h1>
+        </div>
+        <div className="products__content"></div>
+        <p>{description}</p>
+        <ul>{productList}</ul>
       </div>
-      <div className="products__content"></div>
-      <p>{description}</p>
-      <ul>{productList}</ul>
     </section>
   );
 }

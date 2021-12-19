@@ -31,18 +31,20 @@ export default function Contact() {
           className="contact__hero__image"
         />
       </div>
-      <h2>Opening Times</h2>
-      <ul>{openingTimes}</ul>
-      <h2>Book a Table</h2>
-      <BookingForm getBooking={getBooking} />
-      {showModal && (
-        <Modal handleClose={handleClose}>
-          <BookingSummary booking={booking} />
-        </Modal>
-      )}
-      <h2>Address</h2>
-      <p> Magnus Ladulåsgatan 8C, 118 66 Stockholm</p>
-      <Map />
+      <div className="container">
+        <h2>Opening Times</h2>
+        <ul>{openingTimes}</ul>
+        <h2>Book a Table</h2>
+        <BookingForm getBooking={getBooking} />
+        {showModal && (
+          <Modal handleClose={handleClose}>
+            <BookingSummary booking={booking} />
+          </Modal>
+        )}
+        <h2>Address</h2>
+        <p> Magnus Ladulåsgatan 8C, 118 66 Stockholm</p>
+        <Map />
+      </div>
     </section>
   );
 }

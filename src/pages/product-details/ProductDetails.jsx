@@ -18,13 +18,15 @@ export default function ProductDetails() {
       <div className="details__hero">
         <img src={imageSrc} alt={name} className="details__image" />
       </div>
-      <h1 className="details__name">{name}</h1>
-      <p className="details__description">{description}</p>
-      <h2>Ingredients</h2>
-      <Ingredients ingredients={ingredients} />
-      <h2>Nutrition Facts</h2>
-      <NutritionTable product={product} />
-      <button onClick={() => history.goBack()}>Go back</button>
+      <div className="container">
+        <h1 className="details__name">{name}</h1>
+        <p className="details__description">{description}</p>
+        <h2>Ingredients</h2>
+        <Ingredients ingredients={ingredients} />
+        <h2>Nutrition Facts</h2>
+        <NutritionTable product={product} />
+        <button onClick={() => history.goBack()}>Go back</button>
+      </div>
     </article>
   );
 }
