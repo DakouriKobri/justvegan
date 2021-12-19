@@ -25,7 +25,6 @@
     }
   }
 }
-
 .navbar {
   height: 2rem;
   margin: 1.19rem auto 1rem;
@@ -49,5 +48,26 @@
     &:hover {
       border-bottom: 2px solid rgba($green, 0.8);
     }
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3em 0;
+  color: $light;
+  background-color: $dark;
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    font-size: 0.9rem;
+  }
+  .disclaimer {
+    max-width: 320px;
+    margin: 0 auto;
+    font-size: 0.7rem;
   }
 }
