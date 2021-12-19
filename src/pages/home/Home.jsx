@@ -7,7 +7,7 @@ export default function Home() {
   ));
 
   return (
-    <div>
+    <div className="container">
       <ul>{categoryList}</ul>
     </div>
   );

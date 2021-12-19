@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import "./modal.css";
+import "./modal.scss";
 
 export default function Modal({ children, handleClose }) {
   return ReactDOM.createPortal(
