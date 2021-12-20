@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Hero
         backgroundImage={imageSrc}
-        subtractedHeight="67.03px"
+        subtractedHeight="60px"
         heroText={text}
       />
       <div className="container">

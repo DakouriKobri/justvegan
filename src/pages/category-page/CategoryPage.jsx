@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import Product from "../../components/product/Product";
 import productData from "../../data/productData.json";
 import categoryData from "../../data/categoryData.json";
+import Hero from "../../components/hero/Hero";
+import "./category-page.scss";
 
 export default function CategoryPage() {
   const { category } = useParams();
@@ -16,20 +18,22 @@ export default function CategoryPage() {
     <Product key={product.id} product={product} />
   ));
 
+  const categoryName = <h1 className="text">{category}</h1>;
+
   return (
     <section className="products">
+      <div className="products__hero">
+        <Hero
+          backgroundImage={imageSrc}
+          subtractedHeight="230px"
+          heroText={categoryName}
+        />
+      </div>
       <div className="container">
-        <div className="products__hero">
-          <img
-            src={imageSrc}
-            alt={category}
-            className="products__hero__image"
-          />
-          <h1 className="products__hero__name">{category}</h1>
+        <div className="products__content">
+          <p>{description}</p>
+          <ul>{productList}</ul>
         </div>
-        <div className="products__content"></div>
-        <p>{description}</p>
-        <ul>{productList}</ul>
       </div>
     </section>
   );

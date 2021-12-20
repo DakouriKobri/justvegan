@@ -12,9 +12,9 @@
     @include absoluteCenter;
     text-align: center;
     color: $green;
-    text-shadow: 3px 3px 6px #011801;
+    text-shadow: 2px 2px 5px #011801;
     &__logo {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
     hr {
       width: 130px;
@@ -22,7 +22,7 @@
       color: $green;
     }
     .slogan {
-      font-weight: 500;
+      font-weight: 700;
     }
   }
 }

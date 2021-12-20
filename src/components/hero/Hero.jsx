@@ -5,7 +5,7 @@ export default function Hero({ backgroundImage, subtractedHeight, heroText }) {
     <div
       className="hero"
       style={{
-        height: "100vh",
+        height: `calc(100vh - ${subtractedHeight})`,
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
