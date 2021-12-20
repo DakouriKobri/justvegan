@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import Hero from "../../components/hero/Hero";
 import Ingredients from "../../components/ingredients/Ingredients";
 import NutritionTable from "../../components/nutrition-table/NutritionTable";
 import productData from "../../data/productData.json";
@@ -16,7 +17,11 @@ export default function ProductDetails() {
   return (
     <article className="details">
       <div className="details__hero">
-        <img src={imageSrc} alt={name} className="details__image" />
+        <Hero
+          backgroundImage={imageSrc}
+          subtractedHeight="212px"
+          ariaLabel={name}
+        />
       </div>
       <div className="container">
         <h1 className="details__name">{name}</h1>

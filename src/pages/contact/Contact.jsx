@@ -6,6 +6,7 @@ import BookingForm from "../../components/contact-info/BookingForm";
 import Modal from "../../components/modal/Modal";
 import BookingSummary from "../../components/contact-info/BookingSummary";
 import Map from "../../components/contact-info/Map";
+import Hero from "../../components/hero/Hero";
 
 export default function Contact() {
   const [showModal, setShowModal] = useState(false);
@@ -13,6 +14,7 @@ export default function Contact() {
   const openingTimes = openingHours.map((time) => (
     <OpeningTimes key={time.id} {...time} />
   ));
+
   function getBooking(newBooking) {
     setBooking(newBooking);
     setShowModal(true);
@@ -25,10 +27,10 @@ export default function Contact() {
   return (
     <section className="contact">
       <div className="contact__hero">
-        <img
-          src={ladyChef}
-          alt="Smiling lady-chef cooking in kitchen"
-          className="contact__hero__image"
+        <Hero
+          backgroundImage={ladyChef}
+          subtractedHeight="212px"
+          ariaLabel="Smiling lady-chef cooking in kitchen"
         />
       </div>
       <div className="container">

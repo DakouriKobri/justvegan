@@ -25,7 +25,7 @@ export default function CategoryPage() {
       <div className="products__hero">
         <Hero
           backgroundImage={imageSrc}
-          subtractedHeight="230px"
+          subtractedHeight="130px"
           heroText={categoryName}
         />
       </div>
