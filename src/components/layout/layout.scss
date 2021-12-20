@@ -1,14 +1,15 @@
 @use "../../scss/base/variables" as *;
 
 .navigation {
-  height: $header-height;
+  height: $headerHeight;
   background-color: $dark;
   position: fixed;
   width: 100%;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
-
+  z-index: 10;
   .content {
     align-items: center;
+    height: $headerHeight;
   }
   .logo {
     display: flex;
@@ -66,7 +67,7 @@
     font-size: 0.9rem;
   }
   .disclaimer {
-    max-width: 340px;
+    max-width: 310px;
     margin: 0 auto;
     font-size: 0.7rem;
   }

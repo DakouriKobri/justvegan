@@ -1,0 +1,28 @@
+@use "../../scss/base/variables" as *;
+@use "../../scss/base/mixins" as *;
+
+.hero {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  .text {
+    @include absoluteCenter;
+    text-align: center;
+    color: $green;
+    text-shadow: 3px 3px 6px #011801;
+    &__logo {
+      font-size: 3rem;
+    }
+    hr {
+      width: 130px;
+      margin: 0 auto;
+      color: $green;
+    }
+    .slogan {
+      font-weight: 500;
+    }
+  }
+}

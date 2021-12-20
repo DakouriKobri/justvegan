@@ -12,8 +12,6 @@ export default function App() {
     <div className="App">
       <Router>
         <Layout>
-          <h1 style={{ backgroundColor: "blue" }}>Hero</h1>
-
           <Switch>
             <Route path="/contact" component={Contact} />
             <Route path="/:category/:slug" component={ProductDetails} />
