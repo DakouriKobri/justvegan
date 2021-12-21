@@ -2,6 +2,7 @@ import Category from "../../components/category/Category";
 import Hero from "../../components/hero/Hero";
 import categoryData from "../../data/categoryData.json";
 import imageSrc from "../../images/categories/home-hero.jpg";
+import "./home.scss";
 
 export default function Home() {
   const categoryList = categoryData.map((category) => (
@@ -15,6 +16,8 @@ export default function Home() {
       <h2 className="slogan">Eat Healthy</h2>
     </div>
   );
+  const alt =
+    "Uncooked vegan meal ingredients spread on a table with cutleries";
 
   return (
     <>
@@ -22,9 +25,10 @@ export default function Home() {
         backgroundImage={imageSrc}
         subtractedHeight="60px"
         heroText={text}
+        ariaLabel={alt}
       />
       <div className="container">
-        <ul>{categoryList}</ul>
+        <ul className="home-list">{categoryList}</ul>
       </div>
     </>
   );

@@ -1,0 +1,18 @@
+@use "../../scss/base/variables" as *;
+
+.category {
+  padding: $space-large 0;
+  color: $dark;
+
+  &__image {
+    margin-bottom: $space-large;
+  }
+  &__name {
+    margin-bottom: $space-medium;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  &__description {
+    margin-bottom: $space-medium;
+  }
+}

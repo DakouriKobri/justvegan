@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./category.scss";
 
 export default function Category({ category }) {
   const { name, description, image } = category;
@@ -11,7 +12,7 @@ export default function Category({ category }) {
       </div>
       <div className="category__text">
         <h2 className="category__name">{name}</h2>
-        <p className="category_description">{description}</p>
+        <p className="category__description">{description}</p>
         <Link to={`/${name}`} className="btn">
           &#62; View menu
         </Link>

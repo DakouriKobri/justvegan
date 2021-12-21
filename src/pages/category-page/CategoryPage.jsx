@@ -27,6 +27,7 @@ export default function CategoryPage() {
           backgroundImage={imageSrc}
           subtractedHeight="130px"
           heroText={categoryName}
+          ariaLabel={categoryName}
         />
       </div>
       <div className="container">
