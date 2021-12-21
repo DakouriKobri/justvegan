@@ -30,7 +30,7 @@ export default function ProductDetails() {
         <Ingredients ingredients={ingredients} />
         <h2>Nutrition Facts</h2>
         <NutritionTable product={product} />
-        <button onClick={() => history.goBack()}>Go back</button>
+        <button onClick={() => history.goBack()}>&#8592; Go back</button>
       </div>
     </article>
   );

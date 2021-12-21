@@ -13,8 +13,8 @@ export default function Category({ category }) {
       <div className="category__text">
         <h2 className="category__name">{name}</h2>
         <p className="category__description">{description}</p>
-        <Link to={`/${name}`} className="btn">
-          &#62; View menu
+        <Link to={`/${name}`} className="btn-text">
+          View menu &#8594;
         </Link>
       </div>
     </li>
