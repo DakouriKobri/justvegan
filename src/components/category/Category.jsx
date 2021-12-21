@@ -10,7 +10,7 @@ export default function Category({ category }) {
       <div className="category__image">
         <img src={imageSrc} alt={name} />
       </div>
-      <div className="category__text">
+      <div>
         <h2 className="category__name">{name}</h2>
         <p className="category__description">{description}</p>
         <Link to={`/${name}`} className="btn-text">

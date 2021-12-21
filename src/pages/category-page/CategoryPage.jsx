@@ -31,9 +31,9 @@ export default function CategoryPage() {
         />
       </div>
       <div className="container">
-        <div className="products__content">
-          <p>{description}</p>
-          <ul>{productList}</ul>
+        <div className="content">
+          <p className="content__description">{description}</p>
+          <ul className="content__list">{productList}</ul>
         </div>
       </div>
     </section>

@@ -1,9 +1,21 @@
+@use "../../scss/base/variables" as *;
+
 .products {
   &__hero {
     font-size: 2.5rem;
     text-transform: capitalize;
   }
+  .text {
+    color: $whitish;
+  }
+  .content {
+    margin-top: $space-ultra;
 
-  &__content {
+    &__description {
+      margin: $space-large 0;
+      padding-top: $space-medium;
+    }
+    &__list {
+    }
   }
 }

@@ -28,7 +28,7 @@ export default function Home() {
         ariaLabel={alt}
       />
       <div className="container">
-        <ul className="home-list">{categoryList}</ul>
+        <ul className="home__list">{categoryList}</ul>
       </div>
     </>
   );

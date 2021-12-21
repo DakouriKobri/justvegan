@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./product.scss";
 
 export default function Product({ product }) {
   const { slug, name, category, abstract, image } = product;
