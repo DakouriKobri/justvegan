@@ -1,11 +1,11 @@
 export default function NutritionRow({ data }) {
-  const { amount, label, unit } = data;
+  const { amount, label } = data;
+
   return (
     <tr>
-      <td>{label}</td>
-      <td>
-        {amount} {unit}
-      </td>
+      <td className="blank-cell"></td>
+      <th>{label}</th>
+      <td>{amount}</td>
     </tr>
   );
 }

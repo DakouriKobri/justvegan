@@ -7,6 +7,7 @@
   }
   .text {
     color: $whitish;
+    font-weight: 500;
   }
   .content {
     margin-top: $space-ultra;
@@ -14,8 +15,6 @@
     &__description {
       margin: $space-large 0;
       padding-top: $space-medium;
-    }
-    &__list {
     }
   }
 }

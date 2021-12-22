@@ -1,0 +1,16 @@
+@use "../../scss/base/variables" as *;
+
+.details {
+  color: $dark;
+  &__name {
+    margin-bottom: $space-small;
+    padding-top: $space-large;
+  }
+  &__description {
+    margin-bottom: $space-large;
+  }
+  &__subtitle {
+    margin-bottom: $space-small;
+    font-weight: 500;
+  }
+}

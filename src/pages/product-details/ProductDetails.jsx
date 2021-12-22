@@ -2,8 +2,9 @@ import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import Hero from "../../components/hero/Hero";
 import Ingredients from "../../components/ingredients/Ingredients";
-import NutritionTable from "../../components/nutrition-table/NutritionTable";
+import NutritionFacts from "../../components/nutrition-table/NutritionFacts";
 import productData from "../../data/productData.json";
+import "./product-details.scss";
 
 export default function ProductDetails() {
   const history = useHistory();
@@ -15,7 +16,7 @@ export default function ProductDetails() {
   const imageSrc = require(`../../images/${category}/${image}`);
 
   return (
-    <article className="details">
+    <section className="details">
       <div className="details__hero">
         <Hero
           backgroundImage={imageSrc}
@@ -24,14 +25,15 @@ export default function ProductDetails() {
         />
       </div>
       <div className="container">
-        <h1 className="details__name">{name}</h1>
-        <p className="details__description">{description}</p>
-        <h2>Ingredients</h2>
-        <Ingredients ingredients={ingredients} />
-        <h2>Nutrition Facts</h2>
-        <NutritionTable product={product} />
-        <button onClick={() => history.goBack()}>&#8592; Go back</button>
+        <div className="wrapper">
+          <h1 className="details__name">{name}</h1>
+          <p className="details__description">{description}</p>
+          <h2 className="details__subtitle">Ingredients</h2>
+          <Ingredients ingredients={ingredients} />
+          <NutritionFacts product={product} />
+          <button onClick={() => history.goBack()}>&#8592; Go back</button>
+        </div>
       </div>
-    </article>
+    </section>
   );
 }

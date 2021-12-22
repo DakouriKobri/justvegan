@@ -1,7 +1,9 @@
+import "./ingredients.scss";
+
 export default function Ingredients({ ingredients }) {
   const ingredientList = ingredients.map((ingredient, index) => (
-    <li key={index}>{ingredient}</li>
+    <li key={index}>&#9679; {ingredient}</li>
   ));
 
-  return <ul className="ingredient-grid">{ingredientList}</ul>;
+  return <ul className="ingredients">{ingredientList}</ul>;
 }
