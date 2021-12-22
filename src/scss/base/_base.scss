@@ -18,6 +18,9 @@ body {
   scroll-behavior: smooth;
   line-height: 1.7;
 }
+a {
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -25,20 +28,39 @@ img {
 ul {
   list-style: none;
 }
-a {
-  text-decoration: none;
+.btn {
+  &,
+  &:link,
+  &:visited {
+    width: 100%;
+    padding: 0.8em;
+    color: $whitish;
+    background-color: $green;
+    font-size: 1rem;
+    border: 1px solid $green;
+    border-radius: $border-radius;
+    transition: all 0.2s;
+  }
+  &-close {
+    width: 50%;
+    background-color: $warning;
+    border: 1px solid $warning;
+  }
+  &:hover {
+    background-color: $whitish;
+    color: $green;
+    box-shadow: 0 1rem 2rem rgba($black, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+    transform: translateY(0);
+  }
 }
 .container {
   width: 85%;
   max-width: 1128px;
   margin: 0 auto;
-}
-.wrapper {
-  margin: $space-ultra 0 $space-large;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
 }
 .flex-center {
   display: flex;
@@ -47,4 +69,11 @@ a {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  margin: $space-ultra 0 $space-large;
 }

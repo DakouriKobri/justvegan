@@ -45,7 +45,7 @@ export default function Contact() {
               <BookingSummary booking={booking} />
             </Modal>
           )}
-          <h2 className="contact__title">Address</h2>
+          <h2 className="contact__title adress">Address</h2>
           <p>Magnus Ladulåsgatan 8C, 118 66 Stockholm</p>
           <Map />
         </div>

@@ -8,6 +8,9 @@
   &__title {
     margin: $space-large 0;
   }
+  .adress {
+    margin-bottom: $space-medium;
+  }
 }
 .maps {
   margin-top: $space-large;
@@ -28,7 +31,7 @@
     border: 1px solid $black;
     border-radius: $border-radius;
     font-size: inherit;
-    padding: 0.313em 0.625em;
+    padding: 0.8em;
     outline: none;
     width: 100%;
   }
@@ -47,11 +50,11 @@ select.booking-form__input {
   &__label {
     text-align: left;
     margin-right: 0.313rem;
-    font-weight: 500;
+    font-weight: 600;
   }
   .warning {
     margin: $space-small;
-    color: red;
+    color: $warning;
 
     &__text {
       margin-bottom: $space-medium;
