@@ -31,28 +31,30 @@ export default function BookingForm({ getBooking }) {
 
   return (
     <form className="booking-form" onSubmit={handleSubmit}>
-      <label>
-        <span>Full Name:</span>
+      <label className="grid">
+        <span className="booking-form__label">Full Name</span>
         <input
           type="text"
-          placeholder="Aretha Fraklin"
+          placeholder="Aretha Franklin"
           onChange={(event) => setFullName(event.target.value)}
           value={fullName}
           required
+          className="booking-form__input"
         />
       </label>
-      <label>
-        <span>Email:</span>
+      <label className="grid">
+        <span className="booking-form__label">Email</span>
         <input
           type="email"
           placeholder="a.franklin@franklin.com"
           onChange={(event) => setEmail(event.target.value)}
           value={email}
           required
+          className="booking-form__input"
         />
       </label>
-      <label>
-        <span>Number of People:</span>
+      <label className="grid">
+        <span className="booking-form__label">Number of People</span>
         <input
           type="number"
           placeholder="9"
@@ -61,20 +63,26 @@ export default function BookingForm({ getBooking }) {
           onChange={(event) => setNumberOfPeople(event.target.value)}
           value={numberOfPeople}
           required
+          className="booking-form__input"
         />
       </label>
-      <label>
-        <span>Date:</span>
+      <label className="grid">
+        <span className="booking-form__label">Date</span>
         <input
           type="date"
           onChange={(event) => setDate(event.target.value)}
           value={date}
           required
+          className="booking-form__input"
         />
       </label>
-      <label>
-        <span>Time: </span>
-        <select onChange={(event) => setTime(event.target.value)} required>
+      <label className="grid">
+        <span className="booking-form__label">Time</span>
+        <select
+          onChange={(event) => setTime(event.target.value)}
+          required
+          className="booking-form__input"
+        >
           <option value="">Select Hour</option>
           {selectedOption}
         </select>

@@ -1,0 +1,39 @@
+@use "../../scss/base/variables" as *;
+
+.contact {
+  &__time {
+    margin-bottom: $space-large;
+    padding-top: $space-large;
+  }
+  &__title {
+    margin: $space-large 0;
+  }
+}
+.maps {
+  margin-top: $space-large;
+  border: 1px solid $dark;
+}
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 40px;
+  padding: 0.3em 0.625em 0.625em;
+  border-radius: $border-radius;
+  border: 1px solid $black;
+
+  &__label {
+    font-weight: bold;
+  }
+  &__input {
+    border: 1px solid $black;
+    border-radius: $border-radius;
+    font-size: inherit;
+    padding: 0.313em 0.625em;
+    outline: none;
+    width: 100%;
+  }
+}
+
+select.booking-form__input {
+  background-color: white;
+}
