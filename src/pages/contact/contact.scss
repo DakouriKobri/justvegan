@@ -33,7 +33,28 @@
     width: 100%;
   }
 }
-
 select.booking-form__input {
   background-color: white;
+}
+.booking-summary {
+  color: $dark;
+  &__title {
+    margin-bottom: $space-small;
+  }
+  &__item {
+    text-align: left;
+  }
+  &__label {
+    text-align: left;
+    margin-right: 0.313rem;
+    font-weight: 500;
+  }
+  .warning {
+    margin: $space-small;
+    color: red;
+
+    &__text {
+      margin-bottom: $space-medium;
+    }
+  }
 }

@@ -1,47 +1,37 @@
 export default function BookingSummary({ booking }) {
   const { fullName, email, numberOfPeople, date, time } = booking;
   return (
-    <article>
-      <h3>Your booking summary</h3>
-      <p>
-        <span>
-          <strong>Full Name:</strong>
-          {fullName}
-        </span>
+    <article className="booking-summary">
+      <h3 className="booking-summary__title">Your booking summary</h3>
+      <p className="booking-summary__item">
+        <span className="booking-summary__label">Full Name: </span>
+        {fullName}
       </p>
-      <p>
-        <span>
-          <strong>Email:</strong>
-        </span>
+      <p className="booking-summary__item">
+        <span className="booking-summary__label">Email: </span>
         {email}
       </p>
-      <p>
-        <span>
-          <strong>Number of people:</strong>
-        </span>
+      <p className="booking-summary__item">
+        <span className="booking-summary__label">Number of people:</span>
         {numberOfPeople}
       </p>
-      <p>
-        <span>
-          <strong>Date:</strong>
-        </span>
+      <p className="booking-summary__item">
+        <span className="booking-summary__label">Date:</span>
         {date}
       </p>
-      <p>
-        <span>
-          <strong>Time:</strong>
-        </span>
+      <p className="booking-summary__item">
+        <span className="booking-summary__label">Time:</span>
         {time}
       </p>
-      <div className="warning">
+      <div>
         <p className="warning">
           <strong>WARNING!</strong>
         </p>
-        <p>
-          Please, note that this website doesn't provide any actual service. It
-          was built only as an educational and self-promoting material. Feel
-          free to contact us at <strong>maurille.kobri@gmail.com</strong> if you
-          are interesting in collaborating regarding building web applications.
+        <p className="warning__text">
+          This site was built only as an educational and self-promoting material
+          and does not provide any actual service. Please, feel free to contact
+          the developer at <strong>maurille.kobri@gmail.com</strong> if you are
+          interesting in his work.
         </p>
       </div>
     </article>
