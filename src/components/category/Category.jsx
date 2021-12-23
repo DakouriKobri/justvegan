@@ -7,11 +7,7 @@ export default function Category({ category }) {
 
   return (
     <li className="category">
-      {/* <div className="category__image">
-        <img src={imageSrc} alt={name} />
-      </div> */}
       <img src={imageSrc} alt={name} className="category__image" />
-      {/* <div className="category__text container"> */}
       <div className="category__text ">
         <div className="center">
           <h2 className="category__name">{name}</h2>
