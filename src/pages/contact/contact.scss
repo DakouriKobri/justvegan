@@ -20,6 +20,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px 40px;
+  max-width: 35rem;
+  margin: 0 auto;
   padding: 0.3em 0.625em 0.625em;
   border-radius: $border-radius;
   border: 1px solid $black;

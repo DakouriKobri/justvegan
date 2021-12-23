@@ -31,7 +31,7 @@ export default function BookingSummary({ booking }) {
           This site was built only as an educational and self-promoting material
           and does not provide any actual service. Please, feel free to contact
           the developer at <strong>maurille.kobri@gmail.com</strong> if you are
-          interesting in his work.
+          interested in his work. Thank you!
         </p>
       </div>
     </article>

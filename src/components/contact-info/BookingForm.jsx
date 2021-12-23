@@ -87,7 +87,7 @@ export default function BookingForm({ getBooking }) {
           {selectedOption}
         </select>
       </label>
-      <button className="btn">Submit</button>
+      <button className="btn">Book Now</button>
     </form>
   );
 }

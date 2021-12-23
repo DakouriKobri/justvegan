@@ -30,8 +30,9 @@ export default function ProductDetails() {
           <p className="details__description">{description}</p>
           <h2 className="details__subtitle">Ingredients</h2>
           <Ingredients ingredients={ingredients} />
+          <h2 className="details__subtitle">Nutrition Facts</h2>
           <NutritionFacts product={product} />
-          <button className="btn" onClick={() => history.goBack()}>
+          <button className="btn btn--product" onClick={() => history.goBack()}>
             &#8592; Go back
           </button>
         </div>
