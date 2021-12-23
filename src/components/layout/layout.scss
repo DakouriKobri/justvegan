@@ -13,16 +13,22 @@
   }
   .logo {
     display: flex;
+    transform: translateY(-5px);
+    gap: 0.3rem;
+
     margin-left: 0.5rem;
     color: $green;
 
     &-text {
-      display: none;
-      position: absolute;
+      font-size: 1.15rem;
+      @media (max-width: 29.81rem) {
+        display: none;
+      }
     }
     &-icon {
       color: $green;
       font-size: 1.7rem;
+      transform: translateY(6px);
     }
   }
 }

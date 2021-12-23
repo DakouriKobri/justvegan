@@ -1,11 +1,16 @@
 @use "../../scss/base/variables" as *;
 
 .category {
-  padding: $space-large 0;
   color: $dark;
 
+  &__text {
+    padding: $space-large;
+  }
   &__image {
-    margin-bottom: $space-large;
+    object-fit: fill;
+    // width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
   &__name {
     margin-bottom: $space-medium;
@@ -31,6 +36,29 @@
     &:active {
       box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
       transform: translateY(0);
+    }
+  }
+
+  @media (min-width: 37.5rem) {
+    display: flex;
+    align-items: center;
+
+    &__image,
+    &__text {
+      width: 50%;
+    }
+    &__text {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+    }
+    .center {
+      margin: 0 auto;
+      max-width: 430px;
+    }
+    &:nth-child(even) {
+      display: flex;
+      flex-direction: row-reverse;
     }
   }
 }

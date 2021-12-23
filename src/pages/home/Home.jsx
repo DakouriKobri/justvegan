@@ -27,7 +27,8 @@ export default function Home() {
         heroText={text}
         ariaLabel={alt}
       />
-      <div className="container">
+      {/* <div className="container"> */}
+      <div>
         <ul className="home__list">{categoryList}</ul>
       </div>
     </>

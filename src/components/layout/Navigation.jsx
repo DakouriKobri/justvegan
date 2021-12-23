@@ -7,8 +7,8 @@ export default function Navigation() {
     <header className="navigation">
       <div className="container row content">
         <Link to="/" className="logo">
-          <div className="logo-text">JustVegan</div>
           <FaLeaf className="logo-icon" />
+          <div className="logo-text">JustVegan</div>
         </Link>
 
         <nav className="navbar">
