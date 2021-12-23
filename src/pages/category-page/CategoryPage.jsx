@@ -1,4 +1,7 @@
+// NPM Package
 import { useParams } from "react-router-dom";
+
+// Project Files
 import Product from "../../components/product/Product";
 import productData from "../../data/productData.json";
 import categoryData from "../../data/categoryData.json";

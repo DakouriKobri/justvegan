@@ -1,3 +1,4 @@
+// Project File
 import "./ingredients.scss";
 
 export default function Ingredients({ ingredients }) {

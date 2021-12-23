@@ -1,4 +1,7 @@
+// NPM Package
 import { useState } from "react";
+
+// Project Files
 import OpeningTimes from "../../components/contact-info/OpeningTimes";
 import ladyChef from "../../images/categories/lady-chef.jpg";
 import openingHours from "../../data/openingHours.json";
@@ -10,12 +13,14 @@ import Hero from "../../components/hero/Hero";
 import "./contact.scss";
 
 export default function Contact() {
+  // Local States
   const [showModal, setShowModal] = useState(false);
   const [booking, setBooking] = useState({});
   const openingTimes = openingHours.map((time) => (
     <OpeningTimes key={time.id} {...time} />
   ));
 
+  // Methods
   function getBooking(newBooking) {
     setBooking(newBooking);
     setShowModal(true);

@@ -1,3 +1,4 @@
+// Project File
 import "./hero.scss";
 
 export default function Hero({

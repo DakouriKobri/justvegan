@@ -1,3 +1,4 @@
+// Project Files
 import Category from "../../components/category/Category";
 import Hero from "../../components/hero/Hero";
 import categoryData from "../../data/categoryData.json";

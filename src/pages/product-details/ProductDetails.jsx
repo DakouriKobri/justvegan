@@ -1,5 +1,8 @@
+// NPM Packages
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom";
+
+// Project Files
 import Hero from "../../components/hero/Hero";
 import Ingredients from "../../components/ingredients/Ingredients";
 import NutritionFacts from "../../components/nutrition-table/NutritionFacts";

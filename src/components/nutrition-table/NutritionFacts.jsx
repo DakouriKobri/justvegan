@@ -1,7 +1,7 @@
+// Project Files
 import MajorFacts from "./MajorFacts";
 import NutritionRow from "./NutritionRow";
 import OtherNutrientsTable from "./OtherNutrientsTable";
-
 import "./nutrition-facts.scss";
 
 export default function NutritionFacts({ product }) {
@@ -16,6 +16,7 @@ export default function NutritionFacts({ product }) {
     protein,
     sodium,
   } = product;
+
   const fats = fatGroup.map((fat) => <NutritionRow key={fat.id} data={fat} />);
   const sugars = carbohydrateGroup.map((carbohydrate) => (
     <NutritionRow key={carbohydrate.id} data={carbohydrate} />

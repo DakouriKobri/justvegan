@@ -1,5 +1,8 @@
+// NPM Packages
 import { FaLeaf } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+
+// Project File
 import "./layout.scss";
 
 export default function Navigation() {

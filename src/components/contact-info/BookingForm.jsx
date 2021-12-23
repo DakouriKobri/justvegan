@@ -1,8 +1,12 @@
+// NPM Package
 import { useState } from "react";
+
+// Project Files
 import timeOptionData from "../../data/timeOptionData.json";
 import TimeOptions from "./TimeOptions";
 
 export default function BookingForm({ getBooking }) {
+  // Local States
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [numberOfPeople, setNumberOfPeople] = useState();
@@ -13,6 +17,7 @@ export default function BookingForm({ getBooking }) {
     <TimeOptions key={data.label} data={data} />
   ));
 
+  // Methods
   function resetForm() {
     setFullName("");
     setNumberOfPeople();

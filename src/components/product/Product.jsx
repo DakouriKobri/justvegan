@@ -1,4 +1,7 @@
+// NPM Package
 import { Link } from "react-router-dom";
+
+// Project File
 import "./product.scss";
 
 export default function Product({ product }) {

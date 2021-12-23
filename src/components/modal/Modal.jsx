@@ -1,4 +1,7 @@
+// NPM Package
 import ReactDOM from "react-dom";
+
+// Project File
 import "./modal.scss";
 
 export default function Modal({ children, handleClose }) {
